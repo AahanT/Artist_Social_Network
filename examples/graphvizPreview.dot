@@ -1,0 +1,46 @@
+//from graphviz import Digraph, Graph
+#include <graph.h>
+#include <iostream>
+
+
+digraph Genius {
+    graph [label="Six Degrees of Artists Separation"]
+    graph [bgcolor=yellow] //set background color
+    //edge [color=white]; //colors the edges
+    node [fontname = "open sans"; shape = box]
+    kanye -> drake -> jayz
+    kanye [color=red,style=filled,shape=invtriangle]
+    drake [
+        fontsize = "16"
+        shape = box
+        label = "Drizzy"
+        color=green
+        style=filled
+    ]
+    jayz [
+        fontsize = "16"
+        shape = box
+        label = "Jay-Z"
+        color=blue
+        style=filled
+    ]
+}
+
+//1. install graphviz preview
+//then access the menu with up arrow + command (mac) + p
+//then type ">" and click the one that says graphviz.showPreviewToSide
+
+//common words: node, edge, graph, digraph, subgraph, strict
+
+//Examples of things you can do:
+//label = "name you want to give it"
+//fontname = "any font"
+//shape = shape of node; box, ellipse, record, invtriangle, diamond
+//fontsize = "16"
+//style=filled
+//color=green
+//subgraph makes a section of the graph its own thing
+//A -> {B C} is the same as A -> B and A -> C together
+
+//extra; not sure what these do
+//graph[page="8.5,11",size="7.5,7",ratio=fill,center=1];
