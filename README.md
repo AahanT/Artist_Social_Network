@@ -38,7 +38,7 @@ We can then visualize the nodes by
 1. Instert the line `graph.viz()` before the main() function ends in **main.cpp**
 2. Run the **main.cpp** file, by entering `g++ --std=c++11 graph.cpp -o graph` in the terminal
 3. Enter `./graph` to run the main file
-4. Change the *dot_file_path* in **visualize_graph.py** 
+4. Change the `dot_file_path` in **visualize_graph.py** 
 5. Run **visualize_graph.py** by running `python visualize_graph.py` in the terminal
 
 You can also test if the graph works fine by running the makefile. This can be done by entering the following in the terminal:
