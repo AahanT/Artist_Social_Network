@@ -8,11 +8,16 @@ We used Spotify for Developers to create a dataset given a large spotify playlis
 
 The artists in the data collected are stored as a node in the graph. The edges are treated as collaborations, i.e. if two artists have a song together, they get an edge. If two artists have done 4 songs together, they get an edge with a weight of four. This provides the graph sufficient weighting for Dijkstra's shortest path algorithm.
 
-The Major data for this graph is included in output.csv.zip. If you want to run this, this requires a lot of storage on your computer. A viable alternative is creating your own graph to motivate to yourself that all methods can work. This block is commented out in main.cpp, provided as an example in the case that you want to run a leaner graph. 
+The data for graph is included in output.csv.zip. This requires a lot of storage on your computer to run. However, a viable alternative is creating your own graph to motivate to yourself that all methods can work. This block is commented out in **main.cpp**, provided as an example in the case that you want to run a leaner graph. 
 
-The Algorithms that are provided in this project are BFS , DFS, BFSSearch,  Dijkstra's Shortest Path, and Kosaraju's algorithm for strongly connected components. These are all graph member variables, readable in graph.h and graph.cpp. At any time, you can call printList() or printNeighbors(artists) to get the entire graph data structure and the Neighbor artists to the given artist. You can also use viz() to visualize the connections of an artist.
+The Algorithms that are provided in this project are BFS , DFS, BFSSearch,  Dijkstra's Shortest Path, and Kosaraju's algorithm for strongly connected components. These are all graph member variables, readable in **graph.h** and **graph.cpp**. At any time, you can call printList() or printNeighbors(artists) to get the entire graph data structure and the Neighbor artists to the given artist. You can also use viz(artist) to visualize the connections of an artist.
 
-## Running 
+## Initialization
+
+We need to clone the repository first. This can be done using
+```
+git clone https://github.com/AahanT/Artist_Social_Network.git
+```
 
 To create the **csv** file needed to generate the graph, 
 1. Download **.xml** file with the songs and the artists
@@ -46,6 +51,3 @@ You can also test if the graph works fine by running the makefile. This can be d
 	make test
 	./test
 ```
-
-
-// ** Discussion of Test Suite
