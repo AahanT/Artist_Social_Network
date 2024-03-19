@@ -29,9 +29,9 @@ To get results from the graph generated from the data,
 ### Optional
 
 You can also visualize the connections of each node in the graph. To do this we first need to install the graphviz library this can be done using the following command
-"""
+```
 	pip install graphviz
-"""
+```
 If you dont have **pip** installed then follow the instructions at https://pip.pypa.io/en/stable/installation/ 
 
 We can then visualize the nodes by
@@ -42,10 +42,10 @@ We can then visualize the nodes by
 5. Run **visualize_graph.py** by running `python visualize_graph.py` in the terminal
 
 You can also test if the graph works fine by running the makefile. This can be done by entering the following in the terminal:
-"""
+```
 	make test
 	./test
-"""
+```
 
 
 // ** Discussion of Test Suite
