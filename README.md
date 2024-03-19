@@ -16,32 +16,36 @@ The Algorithms that are provided in this project are BFS , DFS, BFSSearch,  Dijk
 
 To create the **csv** file needed to generate the graph, 
 1. Download **.xml** file with the songs and the artists
-2. Open **scraper.py** and change 'masters2.xml' to 'path/to/your/file/name.xml'
-3. Run **scraper.py** by entering 'python scraper.py' in the terminal
-4. Run **finalscraper.py** by entering 'python finalscraper.py' in the terminal
+2. Open **scraper.py** and change `masters2.xml` to `path/to/your/file/name.xml`
+3. Run **scraper.py** by entering `python scraper.py` in the terminal
+4. Run **finalscraper.py** by entering `python finalscraper.py` in the terminal
 5. Move the **cleaned.csv** file into ***create_graph*** folder
 
 To get results from the graph generated from the data,
 1. Enter the functions that you want to run in main() function and save the file
-2. To run the **main.cpp** file, enter 'g++ --std=c++11 graph.cpp -o graph' in the terminal
-3. Enter './graph' to run the main file
+2. To run the **main.cpp** file, enter `g++ --std=c++11 graph.cpp -o graph` in the terminal
+3. Enter `./graph` to run the main file
 
 ### Optional
 
 You can also visualize the connections of each node in the graph. To do this we first need to install the graphviz library this can be done using the following command
+"""
 	pip install graphviz
+"""
 If you dont have **pip** installed then follow the instructions at https://pip.pypa.io/en/stable/installation/ 
 
 We can then visualize the nodes by
-1. Instert the line 'graph.viz()' before the main() function ends in **main.cpp**
-2. Run the **main.cpp** file, by entering 'g++ --std=c++11 graph.cpp -o graph' in the terminal
-3. Enter './graph' to run the main file
+1. Instert the line `graph.viz()` before the main() function ends in **main.cpp**
+2. Run the **main.cpp** file, by entering `g++ --std=c++11 graph.cpp -o graph` in the terminal
+3. Enter `./graph` to run the main file
 4. Change the *dot_file_path* in **visualize_graph.py** 
-5. Run **visualize_graph.py** by running 'python visualize_graph.py' in the terminal
+5. Run **visualize_graph.py** by running `python visualize_graph.py` in the terminal
 
 You can also test if the graph works fine by running the makefile. This can be done by entering the following in the terminal:
+"""
 	make test
 	./test
+"""
 
 
 // ** Discussion of Test Suite
