@@ -44,10 +44,13 @@ We can then visualize the nodes by
 2. Run the **main.cpp** file, by entering `g++ --std=c++11 graph.cpp -o graph` in the terminal
 3. Enter `./graph` to run the main file
 4. Change the `dot_file_path` in **visualize_graph.py** 
-5. Run **visualize_graph.py** by running `python visualize_graph.py` in the terminal
+5. Run **visualize_graph.py** by running `python visualize_graph.py` in the terminal. This will store a **.pdf** of the visualized node.
 
 You can also test if the graph works fine by running the makefile. This can be done by entering the following in the terminal:
 ```
 	make test
 	./test
 ```
+
+## Example: Kanye West Node
+![Node](https://github.com/AahanT/Artist_Social_Network/blob/main/examples/Kanye.png)
